@@ -1,0 +1,16 @@
+<!-- with click emit an event an event informing parent component what was selected-->
+<a
+  href="#"
+  class="list-group-item clearfix"
+  (click)="onSelected()">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ movie.title }}</h4>
+  </div>
+  <span class="pull-right">
+        <img
+          [src]="movie.coverImagePath"
+          alt="{{ movie.title }}"
+          class="img-responsive"
+          style="max-height: 50px;">
+      </span>
+</a>
