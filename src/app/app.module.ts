@@ -6,6 +6,9 @@ import { MoviesComponent } from './movies/movies.component';
 import { MovieListComponent } from './movies/movie-list/movie-list.component';
 import { MovieDetailComponent } from './movies/movie-detail/movie-detail.component';
 import { MovieItemComponent } from './movies/movie-list/movie-item/movie-item.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { MovieItemComponent } from './movies/movie-list/movie-item/movie-item.co
     MovieItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    Ng2SearchPipeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

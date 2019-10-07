@@ -2,8 +2,11 @@
     <div class="col-xs-12">
     <!-- *ngFor -> the whole component is replicated for each movie.
         binding [movie] to movie-item.component-->
+      <div class="form-group">
+      <input class="form-control" placeholder="Search Movie Title..." type="text" [(ngModel)]="term">
+      </div>
       <app-movie-item
-        *ngFor="let movieEl of movies"
+        *ngFor="let movieEl of movies |filter:term"
         [movie]="movieEl"
         (movieSelected)="onMovieSelected(movieEl)"></app-movie-item>
     </div>

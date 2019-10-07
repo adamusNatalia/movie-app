@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row row_padding">
         <div class="col-md-6">
           <img
             [src]="movie.coverImagePath"
@@ -13,13 +13,27 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
+            <h3>Description</h3>
+          </div>
+        <div class="col-xs-12">
           {{ movie.description }}
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12">
-          Ingredients
-        </div>
+      <div class="row margin_top">
+          <div class="col-xs-12">
+              <h3>Genre</h3>
+            </div>
+          <div class="col-xs-12">
+            {{ movie.genre }}
+          </div>
       </div>
+      <div class="row margin_top">
+          <div class="col-xs-12">
+              <h3>Rating</h3>
+            </div>
+          <div class="col-xs-12">
+            {{ movie.rating }}
+          </div>
       </div>
-      
+    </div>
+ 

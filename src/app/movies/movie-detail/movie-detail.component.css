@@ -1,0 +1,12 @@
+.row_padding{
+    padding: 25px 25px;
+    background-color: #ffffff;
+}
+
+.margin_top{
+    margin-top: 60px;
+}
+ 
+img {
+    max-height: 480px;
+}
